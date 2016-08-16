@@ -19,7 +19,7 @@ return randomQuote;
 
 
 //prints random quotes to page
-function printQuote (message) {
+function printQuote (getRandomNumbers) {
   message = '<p class="quote">' getRandomQuotes.quote '</p>' 
   message += '<p class="source">' getRandomQuotes.source '</p>';
   var quoteBox = document.getElementById('quote-box');
