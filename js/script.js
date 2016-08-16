@@ -1,3 +1,5 @@
+var message=;
+
 //Collection of quotes to be used in quote generator
 var quotes = [
 {quote :'"I became insane, with long intervals of horrible sanity."', source : '-Edgar Allan Poe' },
@@ -8,20 +10,17 @@ var quotes = [
 ];
 
 //Generates random quotes to be used 
-function getRandomQuotes (){
-return math.floor(math.random()*quotes.length);
 
-
-//loops random quotes 
 while (true){
-getRandomQuotes();
-var message = '<p class="quote"> getRandomQuotes.quote </p>' '<p class="source"> getRandomQuotes.source </p>';
-print(message);
-}
+  function getRandomQuotes (){
+return math.floor(math.random())*quotes.length);
+}}
 
 
-
+//prints random quotes to page
 function printQuote (message) {
+  message = '<p class="quote">' getRandomQuotes.quote '</p>' 
+  message += '<p class="source">' getRandomQuotes.source '</p>';
   var quoteBox = document.getElementById('quote-box');
   quoteBox.innerHTML = message;
 }
