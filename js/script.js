@@ -7,16 +7,18 @@ var quotes = [
 {quote : '"Believe only half of what you see and nothing that you hear."', source : 'Edgar Allan Poe'}
 ];
 
-
-//loop that generates random quotes 
-while (true){
+//Generates random quotes to be used 
 function getRandomQuotes (){
 return math.floor(math.random()*quotes.length);
-}}
 
 
-var message = <p class="quote"> getRandomQuotes.quote </p> <p class="source"> getRandomQuotes.source </p>;
+//loops random quotes 
+while (true){
+getRandomQuotes();
+var message = '<p class="quote"> getRandomQuotes.quote </p>' '<p class="source"> getRandomQuotes.source </p>';
 print(message);
+}
+
 
 
 function printQuote (message) {
