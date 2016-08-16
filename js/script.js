@@ -13,7 +13,8 @@ var quotes = [
 
 while (true){
   function getRandomQuotes (){
-return math.floor(math.random())*quotes.length);
+var randomQuote= math.floor(math.random())*quotes.length);
+return randomQuote;
 }}
 
 
