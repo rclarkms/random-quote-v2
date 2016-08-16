@@ -10,16 +10,14 @@ var quotes = [
 ];
 
 //Generates random quotes to be used 
-
-while (true){
   function getRandomQuotes (){
 var randomQuote= math.floor(math.random())*quotes.length);
 return randomQuote;
-}}
+}
 
 
 //prints random quotes to page
-function printQuote (message) {
+function printQuote () {
   message = '<p class="quote">' getRandomQuotes.quote '</p>' 
   message += '<p class="source">' getRandomQuotes.source '</p>';
   var quoteBox = document.getElementById('quote-box');
@@ -27,4 +25,9 @@ function printQuote (message) {
 // event listener to respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+}
+
+while (true){
+  printQuote();
+}
 }
